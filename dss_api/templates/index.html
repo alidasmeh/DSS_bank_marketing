@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Get Advice - Professional Form</title>
+</head>
+<body>
+
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Get Advice</h2>
+    
+                <form action="/submit" method="post">
+
+                    <!-- 1. Age (Numeric) -->
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age" required>
+                    </div>
+            
+                    <!-- 2. Job (Categorical) -->
+                    <div class="form-group">
+                        <label for="job">Job:</label>
+                        <select class="form-control" id="job" name="job" required>
+                            <option value="admin.">Admin</option>
+                            <option value="blue-collar">Blue Collar</option>
+                            <option value="entrepreneur">Entrepreneur</option>
+                            <!-- Add more options for other job types -->
+                        </select>
+                    </div>
+            
+                    <!-- 3. Marital (Categorical) -->
+                    <div class="form-group">
+                        <label for="marital">Marital Status:</label>
+                        <select class="form-control" id="marital" name="marital" required>
+                            <option value="divorced">Divorced</option>
+                            <option value="married">Married</option>
+                            <option value="single">Single</option>
+                            <!-- Add more options for other marital statuses -->
+                        </select>
+                    </div>
+            
+                    <!-- 4. Education (Categorical) -->
+                    <div class="form-group">
+                        <label for="education">Education:</label>
+                        <select class="form-control" id="education" name="education" required>
+                            <option value="basic.4y">Basic 4y</option>
+                            <option value="basic.6y">Basic 6y</option>
+                            <option value="basic.9y">Basic 9y</option>
+                            <!-- Add more options for other education levels -->
+                        </select>
+                    </div>
+            
+                    <!-- 5. Default (Categorical) -->
+                    <div class="form-group">
+                        <label for="default">Has credit in default?</label>
+                        <select class="form-control" id="default" name="default" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                            <!-- Add more options for other default statuses -->
+                        </select>
+                    </div>
+            
+                    <!-- 6. Housing (Categorical) -->
+                    <div class="form-group">
+                        <label for="housing">Has housing loan?</label>
+                        <select class="form-control" id="housing" name="housing" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                            <!-- Add more options for other housing statuses -->
+                        </select>
+                    </div>
+            
+                    <!-- 7. Loan (Categorical) -->
+                    <div class="form-group">
+                        <label for="loan">Has personal loan?</label>
+                        <select class="form-control" id="loan" name="loan" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                            <!-- Add more options for other loan statuses -->
+                        </select>
+                    </div>
+            
+                    <!-- 8. Contact (Categorical) -->
+                    <div class="form-group">
+                        <label for="contact">Contact communication type:</label>
+                        <select class="form-control" id="contact" name="contact" required>
+                            <option value="cellular">Cellular</option>
+                            <option value="telephone">Telephone</option>
+                            <!-- Add more options for other contact types -->
+                        </select>
+                    </div>
+            
+                    <!-- 9. Month (Categorical) -->
+                    <div class="form-group">
+                        <label for="month">Last contact month of the year:</label>
+                        <select class="form-control" id="month" name="month" required>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <!-- Add more options for other months -->
+                        </select>
+                    </div>
+            
+                    <!-- 10. Day of Week (Categorical) -->
+                    <div class="form-group">
+                        <label for="day_of_week">Last contact day of the week:</label>
+                        <select class="form-control" id="day_of_week" name="day_of_week" required>
+                            <option value="mon">Monday</option>
+                            <option value="tue">Tuesday</option>
+                            <!-- Add more options for other days of the week -->
+                        </select>
+                    </div><!-- 11. Campaign (Numeric) -->
+                    <div class="form-group">
+                        <label for="campaign">Number of contacts during this campaign:</label>
+                        <input type="number" class="form-control" id="campaign" name="campaign" required>
+                    </div>
+                    
+                    <!-- 12. Pdays (Numeric) -->
+                    <div class="form-group">
+                        <label for="pdays">Number of days since last contact from a previous campaign:</label>
+                        <input type="number" class="form-control" id="pdays" name="pdays" required>
+                    </div>
+                    
+                    <!-- 13. Previous (Numeric) -->
+                    <div class="form-group">
+                        <label for="previous">Number of contacts performed before this campaign:</label>
+                        <input type="number" class="form-control" id="previous" name="previous" required>
+                    </div>
+                    
+                    <!-- 14. Poutcome (Categorical) -->
+                    <div class="form-group">
+                        <label for="poutcome">Outcome of the previous marketing campaign:</label>
+                        <select class="form-control" id="poutcome" name="poutcome" required>
+                            <option value="failure">Failure</option>
+                            <option value="nonexistent">Nonexistent</option>
+                            <option value="success">Success</option>
+                            <!-- Add more options for other outcomes -->
+                        </select>
+                    </div>
+                    
+                    <!-- 15. Emp.var.rate (Numeric) -->
+                    <div class="form-group">
+                        <label for="emp_var_rate">Employment variation rate (Quarterly):</label>
+                        <input type="number" class="form-control" id="emp_var_rate" name="emp_var_rate" required>
+                    </div>
+                    
+                    <!-- 16. Cons.price.idx (Numeric) -->
+                    <div class="form-group">
+                        <label for="cons_price_idx">Consumer price index (Monthly):</label>
+                        <input type="number" class="form-control" id="cons_price_idx" name="cons_price_idx" required>
+                    </div>
+                    
+                    <!-- 17. Cons.conf.idx (Numeric) -->
+                    <div class="form-group">
+                        <label for="cons_conf_idx">Consumer confidence index (Monthly):</label>
+                        <input type="number" class="form-control" id="cons_conf_idx" name="cons_conf_idx" required>
+                    </div>
+                    
+                    <!-- 18. Euribor3m (Numeric) -->
+                    <div class="form-group">
+                        <label for="euribor3m">Euribor 3 month rate (Daily):</label>
+                        <input type="number" class="form-control" id="euribor3m" name="euribor3m" required>
+                    </div>
+            
+                    <!-- Add a submit button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
